@@ -1,22 +1,23 @@
 body {
 	box-sizing: border-box;
+	background: white;
 	margin: 0;
 	padding: 0;
 	font-family: 'Chakra Petch', sans-serif;
 	height: 100vh;
+	width: auto;
 }
 
 /************************ Header/NavBar *****************/
 
 header {
-	width: 100%;
-	background: whitesmoke;
+	max-width: 1600px;
 }
 
 .navbar {
 	height: 60px;
 	width: 100%;
-	background: rgb(148, 229, 229);
+	background: rgb(224, 255, 255);
 	display: flex;
 	position: fixed;
 	z-index: 999 !important;
@@ -32,14 +33,14 @@ header {
 }
 
 .contLogo p {
-	font-size: 18px;
+	font-size: 1.125rem;
 	font-family: 'Merienda', cursive;
-	color: rgb(238, 88, 205);
+	color: rgb(212, 0, 166);
 }
 
 .contItems {
 	font-family: 'Red Rose', cursive;
-	font-size: 22px;
+	font-size: 1.375rem;
 	margin-right: 15px;
 	height: 100%;
 	display: flex;
@@ -50,11 +51,11 @@ header {
 	padding: 10px;
 	cursor: pointer;
 	text-decoration: none;
-	color: rgb(159, 40, 163);
+	color: rgb(178, 5, 184);
 }
 
 .items:hover {
-	color: rgb(238, 20, 238);
+	color: rgb(255, 0, 255);
 }
 
 .logoMenuImg {
@@ -79,7 +80,7 @@ header {
 		padding-top: 20px;
 	}
 	.items {
-		background: rgb(148, 229, 229);
+		background: rgb(224, 255, 255);
 		/* pour la marge plus haut */
 		margin-right: 0;
 		padding: 10px 20px;
@@ -88,7 +89,7 @@ header {
 	}
 	.contItems {
 		display: none;
-		border-top: 1px solid rgb(202, 61, 207);
+		border-top: 1px solid rgb(178, 5, 184);
 	}
 	/* Classe à toggle */
 	.responsive {
@@ -98,22 +99,26 @@ header {
 
 /********************* Section Profil *******************************/
 
-#Profil {
+#Prfol {
+	background-color: white;
+}
+
+#Profil .container {
+	max-width: 1600px;
+	margin-left: auto;
+	margin-right: auto;
 	display: flex;
-	max-width: 100%;
 	-moz-box-align: center;
 	align-items: center;
 	flex-direction: row;
-	flex: 1 0 auto;
 	justify-content: space-evenly;
 	padding-top: 100px;
-	padding-bottom: 50px;
+	padding-bottom: 30px;
 	overflow: auto;
 }
 
 .presentation {
 	display: flex;
-	box-sizing: border-box;
 	max-width: 100%;
 	flex-direction: column;
 }
@@ -131,35 +136,19 @@ header {
 	-moz-box-pack: center;
 	justify-content: center;
 	border-radius: 50%;
+	box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
 	overflow: hidden;
-	transform: translatey(0px);
-	animation: float 2s ease-in-out infinite;
-}
-
-@keyframes float {
-	0% {
-		box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
-		transform: translatey(0px);
-	}
-	50% {
-		box-shadow: 0 25px 15px 0px rgba(0, 0, 0, 0.2);
-		transform: translatey(-20px);
-	}
-	100% {
-		box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
-		transform: translatey(0px);
-	}
 }
 
 .presentation h1 {
-	font-size: 34px;
+	font-size: 2.125rem;
 	margin: 15px;
 	font-weight: 600;
 	text-align: center
 }
 
 .presentation p {
-	font-size: 18px;
+	font-size: 1.125rem;
 	text-align: center;
 }
 
@@ -174,7 +163,7 @@ header {
 }
 
 .coord p {
-	font-size: 18px;
+	font-size: 1.125rem;
 	margin: 5px 5px 15px 5px;
 }
 
@@ -182,35 +171,7 @@ header {
 	margin: 5px 5px 15px 5px;
 	text-decoration: none;
 	color: black;
-	font-size: 18px;
-}
-
-.description {
-	display: flex;
-	flex-direction: column;
-	max-width: 100%;
-	-moz-box-align: center;
-	align-items: center;
-	background-color: rgb(255, 213, 194);
-	color: rgb(68, 68, 68);
-	flex: 1 0 auto;
-	padding: 30px;
-	overflow: auto;
-}
-
-.description h2 {
-	font-family: 'Merienda', cursive;
-	font-size: 30px;
-	margin: 20px;
-}
-
-.description p {
-	margin: 20px;
-}
-
-.description img {
-	height: 50px;
-	width: 50px;
+	font-size: 1.125rem;
 }
 
 .social {
@@ -252,20 +213,82 @@ header {
 }
 
 @media screen and (max-width: 650px) {
-	#Profil {
+	#Profil .container {
+		padding-top: 80px;
+	}
+}
+
+/**************************** Section Description ***********************/
+
+#description {
+	background-color: rgb(255, 213, 194);
+	color: rgb(68, 68, 68);
+	display: flex;
+	flex-direction: column;
+	-moz-box-align: center;
+	align-items: center;
+}
+
+#description .container {
+	max-width: 1600px;
+	margin-left: auto;
+	margin-right: auto;
+	display: flex;
+	flex-direction: column;
+	-moz-box-align: center;
+	align-items: center;
+	padding: 30px;
+	overflow: auto;
+}
+
+#description h2 {
+	font-family: 'Merienda', cursive;
+	font-size: 1.875rem;
+	margin: 20px;
+}
+
+#description p {
+	margin: 20px;
+}
+
+#description img {
+	height: 50px;
+	width: 50px;
+}
+
+#description a {
+	transform: scale(1);
+	transition: transform 400ms;
+}
+
+#description a:hover {
+	transform: scale(1.5);
+}
+
+#description a:active {
+	transform: scale(1.5);
+}
+
+@media screen and (max-width: 650px) {
+	#Profil .container {
 		flex-direction: column;
+		margin-left: 25px;
+		padding-bottom: 0;
 	}
 	.coord {
 		margin-top: 20px;
 	}
-}
-
-@media screen and (max-width: 480px) {
 	.coord p {
-		margin: 15px 15px 15px 15px;
+		margin: 5px 5px 5px 5px;
 	}
 	.coord a {
-		margin: 15px 15px 15px 15px;
+		margin: 5px 5px 5px 5px;
+	}
+	.presentation h1 {
+		margin: 5px;
+	}
+	.presentation p {
+		margin: 5px;
 	}
 }
 
@@ -274,35 +297,40 @@ header {
 #Competences {
 	background-color: rgb(225, 238, 238);
 	display: flex;
-	max-width: 100%;
 	flex-direction: column;
-	padding-top: 50px;
+	padding-top: 40px;
 	overflow: auto;
 }
 
 #Competences .container {
-	margin-left: 50px;
+	max-width: 1600px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 30px;
 }
 
 #Competences h2 {
-	font-size: 30px;
+	font-size: 1.875rem;
 	font-family: 'Merienda', cursive;
 	padding-bottom: 10px;
+	margin: 10px;
 }
 
 #Competences h4 {
-	font-size: 23px;
+	font-size: 1.437rem;
 	padding-bottom: 10px;
+	margin: 10px;
 }
 
 #Competences p {
-	font-size: 18px;
+	font-size: 1.125rem;
+	margin: 5px;
 }
 
 progress {
 	width: 80%;
 	height: 20px;
-	margin: 15px;
+	margin: 10px;
 	-webkit-appearance: none;
 	-moz-appearance: none;
 	background-color: rgba(231, 217, 191, 0.753);
@@ -334,9 +362,37 @@ progress::-webkit-progress-value {
 	background-color: rgba(245, 245, 245, 0.521);
 }
 
-@media screen and (max-width: 500px) {
+#Competences h5 {
+	font-size: 1.437rem;
+	padding-bottom: 10px;
+	margin: 10px;
+}
+
+@media screen and (max-width: 650px) {
+	#Competences {
+		padding-top: 50px;
+	}
 	#Competences .container {
-		margin-left: 20px;
+		margin-bottom: 15px;
+		margin-left: 25px;
+	}
+	#Competences h2 {
+		padding-bottom: 0;
+		margin: 0px;
+	}
+	#Competences h4 {
+		padding-bottom: 0;
+		margin: 15px;
+	}
+	#Competences p {
+		margin: 0;
+	}
+	progress {
+		margin: 5px;
+	}
+	#Competences h5 {
+		padding-bottom: 0;
+		margin: 5px;
 	}
 }
 
@@ -346,47 +402,71 @@ progress::-webkit-progress-value {
 	background-color: rgba(238, 20, 238, 0.342);
 	display: flex;
 	box-sizing: border-box;
-	max-width: 100%;
 	flex-direction: column;
-	padding-top: 50px;
+	padding-top: 40px;
 	overflow: auto;
 }
 
 #Formations .container {
-	margin-left: 50px;
+	max-width: 1600px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 30px;
 }
 
 #Formations h2 {
-	font-size: 30px;
+	font-size: 1.875rem;
 	font-family: 'Merienda', cursive;
 	padding-bottom: 10px;
 	margin: 15px;
 }
 
 #Formations h3 {
-	font-size: 20px;
+	font-size: 1.25rem;
 	margin: 15px;
 }
 
 #Formations p {
-	font-size: 18px;
+	font-size: 1.125rem;
 	margin: 15px;
 }
 
 #Formations span {
-	font-size: 20px;
+	font-size: 1.25rem;
 	margin: 15px;
 }
 
 #Formations li {
-	font-size: 22px;
+	font-size: 1.375rem;
 	margin: 10px;
 	padding-top: 10px;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 650px) {
+	#Formations {
+		padding-top: 50px;
+	}
 	#Formations .container {
-		margin-left: 20px;
+		margin-bottom: 10px;
+		margin-left: 25px;
+	}
+	#Formations h2 {
+		padding-bottom: 0;
+		margin: 5px;
+	}
+	#Formations h3 {
+		margin: 5px;
+	}
+	#Formations p {
+		margin: 5px;
+	}
+	#Formations span {
+		margin: 0;
+		padding-bottom: 10px;
+	}
+	#Formations li {
+		margin: 10px;
+		padding-top: 0;
 	}
 }
 
@@ -396,18 +476,19 @@ progress::-webkit-progress-value {
 	background-color: rgb(248, 228, 241);
 	display: flex;
 	box-sizing: border-box;
-	max-width: 100%;
 	flex-direction: column;
-	padding-top: 50px;
+	padding-top: 40px;
 	overflow: auto;
 }
 
 #Experiences .container {
-	margin-left: 50px;
+	max-width: 1600px;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 #Experiences h2 {
-	font-size: 30px;
+	font-size: 1.875rem;
 	font-family: 'Merienda', cursive;
 	padding-bottom: 20px;
 }
@@ -418,74 +499,127 @@ progress::-webkit-progress-value {
 }
 
 .item-site .annees {
-	font-size: 22px;
+	font-size: 1.375rem;
 	margin: 10px;
 }
 
 .item-site h3 {
-	font-size: 20px;
+	font-size: 1.25rem;
 	margin-left: 25px;
 }
 
 .item-site p {
-	font-size: 18px;
+	font-size: 1.125rem;
 	margin: 15px;
 	margin-left: 25px;
 	padding-bottom: 10px;
 }
 
-@media screen and (max-width: 500px) {
-	#Formations .container {
-		margin-left: 20px;
+@media screen and (max-width: 650px) {
+	#Experiences {
+		padding-top: 50px;
+	}
+	#Experiences .container {
+		margin-left: 25px;
+	}
+	#Experiences h2 {
+		padding-bottom: 5px;
+		margin: 10px;
+	}
+	.item-site .annees {
+		margin: 5px;
+	}
+	.item-site h3 {
+		margin: 5px 5px 5px 25px;
+	}
+	.item-site p {
+		margin: 5px 5px 5px 25px;
+		padding-bottom: 0px;
 	}
 }
 
 /************************ Section Loisirs **************************/
 
 #Loisirs {
-	background-color: rgb(210, 240, 240);
+	background-color: rgb(165, 212, 212);
 	display: flex;
-	max-width: 100%;
 	flex-direction: column;
 	padding-top: 30px;
-	padding-bottom: 30px;
+	padding-bottom: 20px;
 	overflow: auto;
 }
 
 #Loisirs .container {
-	margin-left: 50px;
+	max-width: 1600px;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 #Loisirs h2 {
-	font-size: 30px;
+	font-size: 1.875rem;
 	font-family: 'Merienda', cursive;
 	padding-bottom: 10px;
 }
 
 #Loisirs img {
+	margin: 5px;
 	height: auto;
 	width: 50px;
+	transform: translatey(0px);
+	animation: float 2s ease-in-out infinite;
+}
+
+@keyframes float {
+	0% {
+		transform: translatey(0px);
+	}
+	50% {
+		transform: translatey(-20px);
+	}
+	100% {
+		transform: translatey(0px);
+	}
 }
 
 #Loisirs .ordi {
+	margin: 5px;
 	height: auto;
 	width: 90px;
 }
 
-@media screen and (max-width: 500px) {
+#Loisirs p {
+	font-size: 1.125rem;
+	padding-bottom: 10px;
+}
+
+@media screen and (max-width: 650px) {
+	#Loisirs {
+		padding-top: 30px;
+		padding-bottom: 10px;
+	}
 	#Loisirs .container {
-		margin-left: 20px;
+		margin-left: 25px;
+	}
+	#Loisirs h2 {
+		padding-bottom: 0px;
+	}
+	#Loisirs p {
+		padding-bottom: 5px;
+		margin: 5px;
 	}
 }
 
 /*********************** Footer ***********************/
 
 footer {
-	height: 20px;
+	max-width: 1600px;
+	margin-left: auto;
+	margin-right: auto;
+	height: 25px;
 	text-align: center;
+	margin: 15px;
 }
 
 footer p {
-	font-size: 18px;
-	margin: 10px;
+	font-size: 1.125rem;
 }
