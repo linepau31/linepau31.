@@ -4,6 +4,7 @@ body {
 	margin: 0;
 	padding: 0;
 	font-family: 'Chakra Petch', sans-serif;
+	font-size: larger;
 	height: 100vh;
 	width: auto;
 }
@@ -17,12 +18,12 @@ header {
 .navbar {
 	height: 60px;
 	width: 100%;
-	background: rgb(224, 255, 255);
+	background: whitesmoke;
 	display: flex;
 	position: fixed;
 	z-index: 999 !important;
 	justify-content: space-between;
-	border-bottom: 2px solid rgb(202, 61, 207);
+	border-bottom: 2px solid rgb(102, 164, 235);
 }
 
 .contLogo {
@@ -35,7 +36,7 @@ header {
 .contLogo p {
 	font-size: 1.125rem;
 	font-family: 'Merienda', cursive;
-	color: rgb(212, 0, 166);
+	color: rgb(102, 164, 235);
 }
 
 .contItems {
@@ -51,11 +52,11 @@ header {
 	padding: 10px;
 	cursor: pointer;
 	text-decoration: none;
-	color: rgb(178, 5, 184);
+	color: rgb(102, 164, 235);
 }
 
 .items:hover {
-	color: rgb(255, 0, 255);
+	color: rgb(11, 27, 248);
 }
 
 .logoMenuImg {
@@ -66,19 +67,23 @@ header {
 	top: 13px;
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 900px) {
+
 	/* on fait apparaitre le logo */
 	.logoMenuImg {
 		display: block;
 	}
+
 	/* pour ne plus display flex les éléments */
 	.navbar {
 		display: block;
 	}
+
 	/* Pour espacer, fait à la fin */
 	.items:nth-child(1) {
 		padding-top: 20px;
 	}
+
 	.items {
 		background: rgb(224, 255, 255);
 		/* pour la marge plus haut */
@@ -87,10 +92,12 @@ header {
 		width: 40%;
 		display: block;
 	}
+
 	.contItems {
 		display: none;
 		border-top: 1px solid rgb(178, 5, 184);
 	}
+
 	/* Classe à toggle */
 	.responsive {
 		display: block;
@@ -99,7 +106,7 @@ header {
 
 /********************* Section Profil *******************************/
 
-#Prfol {
+#Profil {
 	background-color: white;
 }
 
@@ -221,7 +228,7 @@ header {
 /**************************** Section Description ***********************/
 
 #description {
-	background-color: rgb(255, 213, 194);
+	background-color: rgb(226, 242, 248);
 	color: rgb(68, 68, 68);
 	display: flex;
 	flex-direction: column;
@@ -275,31 +282,37 @@ header {
 		margin-left: 25px;
 		padding-bottom: 0;
 	}
+
 	.coord {
 		margin-top: 20px;
 	}
+
 	.coord p {
 		margin: 5px 5px 5px 5px;
 	}
+
 	.coord a {
 		margin: 5px 5px 5px 5px;
 	}
+
 	.presentation h1 {
 		margin: 5px;
 	}
+
 	.presentation p {
 		margin: 5px;
 	}
 }
 
-/************************ Section Compétences *****************/
+/************************ Section Competences *****************/
 
 #Competences {
-	background-color: rgb(225, 238, 238);
+	background-image: url(ressources/fondCompetence.png);
 	display: flex;
 	flex-direction: column;
 	padding-top: 40px;
 	overflow: auto;
+	font-weight: bold;
 }
 
 #Competences .container {
@@ -312,12 +325,7 @@ header {
 #Competences h2 {
 	font-size: 1.875rem;
 	font-family: 'Merienda', cursive;
-	padding-bottom: 10px;
-	margin: 10px;
-}
-
-#Competences h4 {
-	font-size: 1.437rem;
+	font-weight: bolder;
 	padding-bottom: 10px;
 	margin: 10px;
 }
@@ -327,43 +335,9 @@ header {
 	margin: 5px;
 }
 
-progress {
-	width: 80%;
-	height: 20px;
-	margin: 10px;
-	-webkit-appearance: none;
-	-moz-appearance: none;
-	background-color: rgba(231, 217, 191, 0.753);
-	border-radius: 5px;
-	border: none;
-}
-
-progress::-webkit-progress-bar {
-	background-color: rgb(238, 88, 205);
-	border-radius: 5px;
-	border: 1px solid rgba(51, 36, 187, 0.918);
-	box-shadow: 4px 4px 6px rgb(39, 85, 211);
-}
-
-progress::-webkit-progress-value {
-	border-radius: 5px;
-	background-color: rgba(245, 245, 245, 0.521);
-}
-
-progress::-moz-progress-bar {
-	background-color: rgb(238, 88, 205);
-	border-radius: 5px;
-	border: 1px solid rgba(51, 36, 187, 0.918);
-	box-shadow: 4px 4px 6px rgb(39, 85, 211);
-}
-
-progress::-webkit-progress-value {
-	border-radius: 5px;
-	background-color: rgba(245, 245, 245, 0.521);
-}
-
 #Competences h5 {
-	font-size: 1.437rem;
+	font-size: 1.875rem;
+	font-weight: bolder;
 	padding-bottom: 10px;
 	margin: 10px;
 }
@@ -372,34 +346,207 @@ progress::-webkit-progress-value {
 	#Competences {
 		padding-top: 50px;
 	}
+
 	#Competences .container {
 		margin-bottom: 15px;
 		margin-left: 25px;
 	}
+
 	#Competences h2 {
 		padding-bottom: 0;
 		margin: 0px;
 	}
-	#Competences h4 {
-		padding-bottom: 0;
-		margin: 15px;
-	}
+
 	#Competences p {
 		margin: 0;
 	}
-	progress {
-		margin: 5px;
-	}
+
 	#Competences h5 {
 		padding-bottom: 0;
 		margin: 5px;
 	}
 }
 
+/************************* Section Réalisation **********************/
+
+#Realisation {
+	background-color: white;
+	display: flex;
+	box-sizing: border-box;
+	flex-direction: column;
+	padding-top: 40px;
+	overflow: auto;
+}
+
+#Realisation .container {
+	max-width: 1600px;
+	height: auto;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#Realisation h2 {
+	font-size: 1.875rem;
+	font-family: 'Merienda', cursive;
+	padding-bottom: 10px;
+	margin: 10px;
+}
+
+.cards-list {
+	margin: auto;
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+
+.square:hover {
+	-webkit-transform: translate(20px, -10px);
+	-ms-transform: translate(10px, -10px);
+	transform: translate(10px, -10px);
+	-webkit-box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+	box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+}
+
+
+.square {
+	width: 460px;
+	height: 430px;
+	margin: 25px;
+	background: whitesmoke;
+	border-radius: 4px;
+	box-shadow: 0px 20px 50px #81a9f8;
+	-webkit-transition: all 0.3s ease;
+	-o-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+}
+
+.square img {
+	clip: rect(0px, 460px, 220px, 0px);
+	border-radius: 4px;
+	position: absolute;
+	width: 460px;
+}
+
+.square h1 {
+	margin: auto;
+	text-align: left;
+	margin-top: 240px;
+	padding-left: 30px;
+	font-family: 'Merriweather', serif;
+	font-size: 24px;
+}
+
+.square p {
+	text-align: justify;
+	padding-left: 30px;
+	padding-right: 30px;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 12px;
+	color: black;
+	line-height: 18px;
+}
+
+.button {
+	background-color: #3EDD84;
+	color: white;
+	width: 90px;
+	padding: 10px 18px;
+	border-radius: 3px;
+	text-align: center;
+	text-decoration: none;
+	display: block;
+	margin-top: 20px;
+	margin-left: 30px;
+	margin-right: 70px;
+	font-size: 12px;
+	cursor: pointer;
+	font-family: 'merriweather';
+}
+
+@media all and (max-width: 650px) {
+	.card-list {
+		flex-direction: column;
+	}
+}
+
+/************************* Section Expériences **********************/
+
+#Experiences {
+	background-color: rgb(198, 228, 248);
+	display: flex;
+	box-sizing: border-box;
+	flex-direction: column;
+	padding-top: 40px;
+	overflow: auto;
+}
+
+#Experiences .container {
+	max-width: 1600px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#Experiences h2 {
+	font-size: 1.875rem;
+	font-family: 'Merienda', cursive;
+	padding-bottom: 20px;
+}
+
+.item-site img {
+	height: 40px;
+	margin-left: 13px;
+}
+
+.item-site .annees {
+	font-size: 1.375rem;
+	margin: 10px;
+}
+
+.item-site h3 {
+	font-size: 1.25rem;
+	margin-left: 25px;
+}
+
+.item-site p {
+	font-size: 1.125rem;
+	margin: 15px;
+	margin-left: 25px;
+	padding-bottom: 10px;
+}
+
+@media screen and (max-width: 650px) {
+	#Experiences {
+		padding-top: 50px;
+	}
+
+	#Experiences .container {
+		margin-left: 25px;
+	}
+
+	#Experiences h2 {
+		padding-bottom: 5px;
+		margin: 10px;
+	}
+
+	.item-site .annees {
+		margin: 5px;
+	}
+
+	.item-site h3 {
+		margin: 5px 5px 5px 25px;
+	}
+
+	.item-site p {
+		margin: 5px 5px 5px 25px;
+		padding-bottom: 0px;
+	}
+}
+
 /*********************** Section Formation *************************/
 
 #Formations {
-	background-color: rgba(238, 20, 238, 0.342);
+	background-color: whitesmoke;
 	display: flex;
 	box-sizing: border-box;
 	flex-direction: column;
@@ -446,102 +593,40 @@ progress::-webkit-progress-value {
 	#Formations {
 		padding-top: 50px;
 	}
+
 	#Formations .container {
 		margin-bottom: 10px;
 		margin-left: 25px;
 	}
+
 	#Formations h2 {
 		padding-bottom: 0;
 		margin: 5px;
 	}
+
 	#Formations h3 {
 		margin: 5px;
 	}
+
 	#Formations p {
 		margin: 5px;
 	}
+
 	#Formations span {
 		margin: 0;
 		padding-bottom: 10px;
 	}
+
 	#Formations li {
 		margin: 10px;
 		padding-top: 0;
 	}
 }
 
-/************************* Section Expériences **********************/
-
-#Experiences {
-	background-color: rgb(248, 228, 241);
-	display: flex;
-	box-sizing: border-box;
-	flex-direction: column;
-	padding-top: 40px;
-	overflow: auto;
-}
-
-#Experiences .container {
-	max-width: 1600px;
-	margin-left: auto;
-	margin-right: auto;
-}
-
-#Experiences h2 {
-	font-size: 1.875rem;
-	font-family: 'Merienda', cursive;
-	padding-bottom: 20px;
-}
-
-.item-site img {
-	height: 40px;
-	margin-left: 13px;
-}
-
-.item-site .annees {
-	font-size: 1.375rem;
-	margin: 10px;
-}
-
-.item-site h3 {
-	font-size: 1.25rem;
-	margin-left: 25px;
-}
-
-.item-site p {
-	font-size: 1.125rem;
-	margin: 15px;
-	margin-left: 25px;
-	padding-bottom: 10px;
-}
-
-@media screen and (max-width: 650px) {
-	#Experiences {
-		padding-top: 50px;
-	}
-	#Experiences .container {
-		margin-left: 25px;
-	}
-	#Experiences h2 {
-		padding-bottom: 5px;
-		margin: 10px;
-	}
-	.item-site .annees {
-		margin: 5px;
-	}
-	.item-site h3 {
-		margin: 5px 5px 5px 25px;
-	}
-	.item-site p {
-		margin: 5px 5px 5px 25px;
-		padding-bottom: 0px;
-	}
-}
-
 /************************ Section Loisirs **************************/
 
 #Loisirs {
-	background-color: rgb(165, 212, 212);
+	background-color: rgb(212, 247, 247);
 	display: flex;
 	flex-direction: column;
 	padding-top: 30px;
@@ -573,9 +658,11 @@ progress::-webkit-progress-value {
 	0% {
 		transform: translatey(0px);
 	}
+
 	50% {
 		transform: translatey(-20px);
 	}
+
 	100% {
 		transform: translatey(0px);
 	}
@@ -597,12 +684,15 @@ progress::-webkit-progress-value {
 		padding-top: 30px;
 		padding-bottom: 10px;
 	}
+
 	#Loisirs .container {
 		margin-left: 25px;
 	}
+
 	#Loisirs h2 {
 		padding-bottom: 0px;
 	}
+
 	#Loisirs p {
 		padding-bottom: 5px;
 		margin: 5px;
