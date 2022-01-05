@@ -7,6 +7,15 @@ body {
 	font-size: larger;
 	height: 100vh;
 	width: auto;
+	color: var(--foreground);
+	background: var(--background);
+}
+
+@media (prefers-color-scheme: dark) {
+	:root {
+		--background: rgb(121, 121, 121);
+		--foreground: black;
+	}
 }
 
 /************************ Header/NavBar *****************/
@@ -18,7 +27,7 @@ header {
 .navbar {
 	height: 60px;
 	width: 100%;
-	background: whitesmoke;
+	background: rgb(198, 228, 248);
 	display: flex;
 	position: fixed;
 	z-index: 999 !important;
@@ -36,7 +45,8 @@ header {
 .contLogo p {
 	font-size: 1.125rem;
 	font-family: 'Merienda', cursive;
-	color: rgb(102, 164, 235);
+	color: #0353D3;
+	font-size: larger;
 }
 
 .contItems {
@@ -52,11 +62,12 @@ header {
 	padding: 10px;
 	cursor: pointer;
 	text-decoration: none;
-	color: rgb(102, 164, 235);
+	color: #0353D3;
+	font-size: larger;
 }
 
 .items:hover {
-	color: rgb(11, 27, 248);
+	color: rgb(51, 146, 255);
 }
 
 .logoMenuImg {
@@ -67,7 +78,7 @@ header {
 	top: 13px;
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 970px) {
 
 	/* on fait apparaitre le logo */
 	.logoMenuImg {
@@ -124,10 +135,6 @@ header {
 
 
 /********************* Section Profil *******************************/
-
-#Profil {
-	background-color: white;
-}
 
 #Profil .container {
 	max-width: 1600px;
@@ -194,9 +201,9 @@ header {
 }
 
 .coord a {
+	color: black;
 	margin: 5px 5px 15px 5px;
 	text-decoration: none;
-	color: black;
 	font-size: 1.125rem;
 }
 
@@ -247,9 +254,8 @@ header {
 /**************************** Section Description ***********************/
 
 #description {
-	background-color: rgb(226, 242, 248);
-	color: rgb(68, 68, 68);
 	display: flex;
+	background-color: rgb(198, 228, 248);
 	flex-direction: column;
 	-moz-box-align: center;
 	align-items: center;
@@ -354,7 +360,7 @@ header {
 	margin: 5px;
 }
 
-#Competences h5 {
+#Competences h3 {
 	font-size: 1.875rem;
 	font-weight: bolder;
 	padding-bottom: 10px;
@@ -380,7 +386,7 @@ header {
 		margin: 0;
 	}
 
-	#Competences h5 {
+	#Competences h3 {
 		padding-bottom: 0;
 		margin: 5px;
 	}
@@ -389,7 +395,6 @@ header {
 /************************* Section Realisation **********************/
 
 #Realisation {
-	background-color: white;
 	display: flex;
 	box-sizing: border-box;
 	flex-direction: column;
@@ -467,7 +472,7 @@ header {
 }
 
 .button {
-	background-color: #3ed8dd;
+	background-color: #0661B7;
 	color: white;
 	width: 90px;
 	padding: 10px 18px;
@@ -619,7 +624,6 @@ header {
 /*********************** Section Formation *************************/
 
 #Formations {
-	background-color: whitesmoke;
 	display: flex;
 	box-sizing: border-box;
 	flex-direction: column;
@@ -699,7 +703,7 @@ header {
 /************************ Section Loisirs **************************/
 
 #Loisirs {
-	background-color: rgb(212, 247, 247);
+	background-color: rgb(198, 228, 248);
 	display: flex;
 	flex-direction: column;
 	padding-top: 30px;
