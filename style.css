@@ -96,7 +96,7 @@ header {
 	}
 
 	.items {
-		background: whitesmoke;
+		background: rgb(198, 228, 248);
 		/* pour la marge plus haut */
 		margin-right: 0;
 		padding: 10px 20px;
