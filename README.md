@@ -1,2 +1,3 @@
 # pauline.marot CV en ligne 
-![image](https://user-images.githubusercontent.com/73278758/148202680-53fbfe44-917d-424d-b61a-44f51f97993f.png)
+![image](https://user-images.githubusercontent.com/73278758/148202823-904a7275-6620-4f8b-bdc8-9ce81e9b9f11.png)
+
