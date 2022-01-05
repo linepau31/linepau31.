@@ -510,11 +510,21 @@ header {
 	.button {
 		margin-bottom: 20px;
 	}
+
+	.square:hover {
+		transform: none;
+		box-shadow: none;
+	}
 }
 
 @media all and (max-width: 470px) {
 	.square h1 {
 		margin-top: 200px;
+	}
+
+	.square:hover {
+		transform: none;
+		box-shadow: none;
 	}
 }
 
@@ -525,6 +535,11 @@ header {
 
 	.square p {
 		font-size: 12px;
+	}
+
+	.square:hover {
+		transform: none;
+		box-shadow: none;
 	}
 }
 
