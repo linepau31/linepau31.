@@ -1,6 +1,6 @@
 body {
 	box-sizing: border-box;
-	background: white;
+	background: whitesmoke;
 	margin: 0;
 	padding: 0;
 	font-family: 'Chakra Petch', sans-serif;
@@ -9,13 +9,6 @@ body {
 	width: auto;
 	color: var(--foreground);
 	background: var(--background);
-}
-
-@media (prefers-color-scheme: dark) {
-	:root {
-		--background: rgb(121, 121, 121);
-		--foreground: black;
-	}
 }
 
 /************************ Header/NavBar *****************/
@@ -432,7 +425,6 @@ header {
 	box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
 }
 
-
 .square {
 	width: 460px;
 	height: 430px;
@@ -459,6 +451,7 @@ header {
 	padding-left: 30px;
 	font-family: 'Merriweather', serif;
 	font-size: 26px;
+	color: black;
 }
 
 .square p {
@@ -789,4 +782,64 @@ footer {
 
 footer p {
 	font-size: 1.125rem;
+}
+
+/************************* Mode Sombre / Claire ********************/
+@media (prefers-color-scheme: dark) {
+	:root {
+		--background: rgb(27, 27, 27);
+		--foreground: whitesmoke;
+	}
+
+	.navbar {
+		background: rgb(0, 34, 68);
+		border-bottom: 2px solid whitesmoke;
+	}
+
+	.contLogo p {
+		color: whitesmoke;
+	}
+
+	.contItems .items {
+		background: rgb(0, 34, 68);
+	}
+
+	.items {
+		color: whitesmoke;
+	}
+
+	.items:hover {
+		color: rgb(131, 189, 255);
+	}
+
+	.coord a {
+		color: whitesmoke;
+	}
+
+	.social img {
+		background-image: whitesmoke;
+	}
+
+	#description {
+		background-color: rgb(0, 34, 68);
+	}
+
+	#Competences {
+		background-image: url(ressources/fondCompetenceSombre.jpg);
+	}
+
+	#Experiences {
+		background-color: rgb(0, 34, 68);
+	}
+
+	#Loisirs {
+		background-color: rgb(0, 34, 68);
+	}
+}
+
+@media (prefers-color-scheme: light) {
+	:root {
+		--background: whitesmoke;
+		--foreground: black;
+	}
 }
