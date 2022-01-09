@@ -83,7 +83,7 @@ header {
 		display: block;
 	}
 
-	.navbar img{
+	.navbar img {
 		width: 40px;
 	}
 
@@ -179,7 +179,7 @@ header {
 
 .presentation p {
 	font-size: 1.125rem;
-	text-align: center;
+	text-align: justify;
 }
 
 .coord {
@@ -278,6 +278,7 @@ header {
 
 #description p {
 	margin: 20px;
+	text-align: justify;
 }
 
 #description img {
@@ -596,12 +597,13 @@ header {
 	}
 
 	#Experiences .container {
+		margin-bottom: 10px;
 		margin-left: 25px;
 	}
 
 	#Experiences h2 {
 		padding-bottom: 5px;
-		margin: 10px;
+		margin: 5px;
 	}
 
 	.item-site .annees {
@@ -609,7 +611,7 @@ header {
 	}
 
 	.item-site h3 {
-		margin: 5px 5px 5px 25px;
+		margin: 5px;
 	}
 
 	.item-site p {
@@ -775,7 +777,7 @@ footer {
 	margin-right: auto;
 	height: 25px;
 	text-align: center;
-	margin: 15px;
+	margin: 20px;
 }
 
 footer p {
@@ -822,12 +824,32 @@ footer p {
 		background-color: rgb(0, 34, 68);
 	}
 
-	#description img {
-		background-image: url(ressources/telecharger-sur-le-lecteur-de-stockage-sombre.png);
-	}
-
 	#Competences {
 		background-image: url(ressources/fondCompetenceSombre.jpg);
+	}
+
+
+	.square:hover {
+		-webkit-box-shadow: 0 20px 40px rgb(0, 68, 136);
+		box-shadow: 0 20px 40px rgb(0, 68, 136);
+	}
+
+	.square {
+		background: rgb(49, 49, 49);
+		box-shadow: 0px 20px 50px rgb(0, 68, 136);
+	}
+
+	.square h1 {
+		color: whitesmoke;
+	}
+
+	.square p {
+		color: whitesmoke;
+	}
+
+	.button {
+		background-color: rgb(0, 34, 68);
+		color: whitesmoke;
 	}
 
 	#Experiences {
